@@ -1,0 +1,16 @@
+.userButtonContainer {
+    width: fit-content;
+    position: fixed;
+    font-size: larger;
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 50%;
+    top: 0.5em;
+    right: 0.5em;
+    cursor: pointer;
+}
+
+.username {
+    padding: 1em;
+}

@@ -1,0 +1,39 @@
+.stickyNoteContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: fixed;
+}
+
+.stickyNoteHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteBtn {
+    background-color: rgb(151, 33, 33);
+    color: #fff;
+    padding: 0.3em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.moveBtn {
+    background-color: rgb(33, 114, 151);
+    color: #fff;
+    padding: 0.3em;
+    border-radius: 50%;
+    cursor: move;
+}
+
+.stickyNote {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.username {
+    color: #898989;
+    font-size: small;
+}

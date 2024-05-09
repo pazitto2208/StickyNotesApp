@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 
 export const isAuthenticated = (req, res, next) => {
-    if(!req.headers.authorization) {
+    if(!req.headers.authorization.token) {
         return res.status(401).send({
             success: false,
             statusCode: 401,
@@ -10,7 +10,7 @@ export const isAuthenticated = (req, res, next) => {
             }
         })
     }
-
+    
     const { token, user } = JSON.parse(req.headers.authorization)
     
     if (!token) {
